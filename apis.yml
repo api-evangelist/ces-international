@@ -1,23 +1,80 @@
 aid: ces-international
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ces-international.png
 name: CES International
-description: CES International is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'CES International was a software company founded in 1989 and based in Alpharetta, Georgia,
+  that built real-time software solutions for distribution utilities — including the Centricity operations
+  resource management (ORM) system with outage-management capabilities and an energy delivery management
+  (EDM) suite for network operations — serving utilities on five continents and more than 35 million metered
+  accounts. It was acquired by SPL WorldGroup in May 2004, and SPL WorldGroup was in turn acquired by Oracle
+  in November 2006, where its utilities software became the foundation of the Oracle Utilities global business
+  unit. CES International no longer operates as an independent company: it publishes no developer portal,
+  no documentation, and no API surface, and none of its historical domains resolve to a live company site.
+  This record is retained as a historical / defunct entry in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/ces-international/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-defunct:
+  acquired_by: SPL WorldGroup
+  acquired_date: '2004-05-05'
+  subsequent_owner: Oracle
+  subsequent_date: '2006-11-03'
+  successor: Oracle Utilities
+  note: Verified 2026-07-20. The Insight Partners portfolio page for this slug returns no company
+    content, and no historical CES International domain serves a live company site.
+x-domain-probe:
+  date: '2026-07-20'
+  method: probed
+  domains:
+  - domain: cesinternational.com
+    resolves: true
+    https_status: 000
+    http_status: 000
+    finding: parked / no company site
+  - domain: ces-international.com
+    resolves: true
+    http_status: 200
+    finding: 'error placeholder page: Page cannot be displayed'
+  - domain: cesint.com
+    resolves: true
+    http_status: 200
+    finding: listed for sale on HugeDomains
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Utilities
+- Energy
+- Outage Management
+- Operations Management
+- Enterprise Software
+- Defunct
+- Acquired
+- Historical
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
